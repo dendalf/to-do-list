@@ -4,7 +4,9 @@ $(document).ready(function(){
     $(qwe).on( 'click', function () {
         var value = $('#input');
         var valueInput = value.val();
-        console.log(valueInput);
+        // console.log(valueInput);
+        $('#add-list').append("<li class='item'> + valueInput + </li>");
+
     });
 
 });
