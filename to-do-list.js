@@ -1,12 +1,21 @@
 $(document).ready(function(){
 
-    var qwe = $('#button-add');
-    $(qwe).on( 'click', function () {
-        var value = $('#input');
-        var valueInput = value.val();
-        // console.log(valueInput);
-        $('#add-list').append("<li class='item'> + valueInput + </li>");
-
+    let qwe = $('#button-add');
+    $(qwe).on( 'click', function abc() {
+        let value = $('#input');
+        let valueInput = value.val();
+        $('#add-list').append(`<li class='item'>${valueInput}</li>`);
+        value.value = '';
     });
+    $('#input').keyup(function(){
+        if(event.keyCode === 13)
+        {
+            let value = $('#input');
+            let valueInput = value.val();
+            $('#add-list').append(`<li class='item'>${valueInput}</li>`);
+            value.value = '';
+            $('#input').value = '';
+        }
+    })
 
 });
