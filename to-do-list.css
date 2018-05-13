@@ -36,6 +36,7 @@
     outline: none;
     -webkit-appearance: none;
 }
+
 #button-add {
     font-family:'PT Sans', sans-serif;
     width: 10%;
@@ -52,19 +53,38 @@
     cursor: pointer;
 }
 /*li*/
+
 #bg-list {
     width: 90%;
     margin: 0 auto;
     font-size: 20px;
     font-family:'PT Sans', sans-serif;
-    background-color: #e0e0e0;
+    /*background-color: #e0e0e0;*/
 }
+
 #add-list {
     list-style-type: none;
     /*margin-left: 3%;*/
-    margin-left: 3%;
+}
+.item:nth-child(2n+1) {
+    height: 60px;
+    line-height: 60px;
+    background-color: #f9f9f9;
+    padding-left: 3%;
+
 }
 .item {
     height: 60px;
     line-height: 60px;
+    background-color: #e0e0e0;
+    padding-left: 3%;
+
 }
+
+
+
+
+
+
+
+
