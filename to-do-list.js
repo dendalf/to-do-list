@@ -32,8 +32,12 @@ $(document).ready(function () {
         // $('#input').valueInput = '';
     });
 
-    $('body').on('click','.remove', function () {
+    $(document).on('click','.remove', function () {
         $(this).parent().remove()
+    });
+
+    $(document).on('click', '.item', function () {
+        $(this).removeClass('item').addClass('checked')
     })
 // }
     // $('#input').keyup(function(){
