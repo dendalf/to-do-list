@@ -83,6 +83,7 @@
     cursor: pointer;
 
 }
+/*Кнопка remove*/
 .remove {
     height: 60px;
     width: 60px;
@@ -102,6 +103,27 @@
     border-radius: 5px;
     cursor: pointer;
 }
+/*Кнопка modal*/
+.modal {
+    height: 60px;
+    width: 60px;
+    float: right;
+    border-radius: 5px;
+    text-align: center;
+    font-family:'PT Sans', sans-serif;
+}
+.modal:hover {
+    height: 60px;
+    width: 60px;
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    font-family:'PT Sans', sans-serif;
+    background-color: #03A9F4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*Зачеркивание*/
 .checked {
     height: 60px;
     line-height: 60px;

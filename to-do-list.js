@@ -23,23 +23,24 @@
 
 $(document).ready(function () {
 
-// if ($('#input').valueInput =! ''){
-
     $('#button-add').on('click', function () {
         let value = $('#input');
         let valueInput = value.val();
-        $('#add-list').append(`<li class='item'>${valueInput}<div class='remove'>x</div></li>`);
-        // $('#input').valueInput = '';
+        $('#add-list').append(`<li class='item'>${valueInput}<div class='remove'>x</div><div class='modal'>m</div></li>`);
     });
 
-    $(document).on('click','.remove', function () {
+    $(document).on('click', '.remove', function () {
         $(this).parent().remove()
+    });
+
+    $(document).on('click', '.modal', function () {
+        alert('Hello World!')
     });
 
     $(document).on('click', '.item', function () {
         $(this).removeClass('item').addClass('checked')
-    })
-// }
+    });
+
     // $('#input').keyup(function(){
     //     if(event.keyCode === 13)
     //     {
